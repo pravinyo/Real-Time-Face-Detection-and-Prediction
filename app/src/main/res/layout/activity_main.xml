@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/topLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.is_great.pro.facetracking.ui.camera.CameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.is_great.pro.facetracking.ui.camera.GraphicOverlay
+                android:id="@+id/faceOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.is_great.pro.facetracking.ui.camera.CameraSourcePreview>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/faceUpdates"
+            android:textColor="@android:color/holo_red_dark"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hello" />
+    </ScrollView>
+
+</RelativeLayout>
